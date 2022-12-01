@@ -19,7 +19,15 @@ mod route;
 extern crate lazy_static;
 
 lazy_static! {
-    static ref SETTINGS: Settings = Settings::init_configuration().unwrap();
+    static ref SETTINGS: Settings = Settings::init_configuration().unwrap_or(
+        Settings::init_other_configuration().unwrap_or(Settings {
+            cors_allowed_headers: vec![],
+            cors_allowed_methods: vec![],
+            cors_allowed_origins: vec![],
+            db_uri: "postgres://postgres:postgres@postgres_service:5432/postgres".to_owned(),
+            server_port: 8013
+        })
+    );
     static ref DB_POOL: AsyncOnce<DbConn> = AsyncOnce::new(async {
         let db = config_database::establish_connection().await;
         db.unwrap()

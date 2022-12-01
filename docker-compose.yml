@@ -1,7 +1,7 @@
 version: '3.6'
 
 services:
-  dev-board:
+  telemetry-collector-server:
     container_name: oh_telemetry_collector_server_rust
     build:
       context: .
