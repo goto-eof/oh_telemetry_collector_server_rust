@@ -15,29 +15,14 @@ pub struct Settings {
 
 impl Settings {
     pub fn init_configuration() -> Result<Self, ConfigError> {
+        println!("initializing settings (1)...");
         debug!("Initializing settings....");
         let environment = env::var("DEV_BOARD_ENV").unwrap_or_else(|_| "development".into());
-        let filename = format!("configuration/{}", environment);
+        let filename = format!("./{}", environment);
         debug!("loading setting file {}...", &filename);
         let settings = Config::builder()
             // default settings
-            .add_source(File::with_name("configuration/default").required(true))
-            // here we override previous setting
-            .add_source(File::with_name(&filename).required(true))
-            .build()?
-            .try_deserialize();
-        debug!("Settings loaded correctly");
-        settings
-    }
-
-    pub fn init_other_configuration() -> Result<Self, ConfigError> {
-        debug!("Initializing settings....");
-        let environment = env::var("DEV_BOARD_ENV").unwrap_or_else(|_| "development".into());
-        let filename = format!("/app/configuration/{}", environment);
-        debug!("loading setting file {}...", &filename);
-        let settings = Config::builder()
-            // default settings
-            .add_source(File::with_name("/app/configuration/default").required(true))
+            .add_source(File::with_name("./default").required(true))
             // here we override previous setting
             .add_source(File::with_name(&filename).required(true))
             .build()?

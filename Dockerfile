@@ -6,7 +6,10 @@ RUN cargo build --release
 
 # Prod stage
 FROM gcr.io/distroless/cc
+# COPY configuration/* /
+COPY default.json /
+COPY production.json /
+COPY log4rs.yml /
 COPY --from=builder /app/target/release/oh_telemetry_collector_server_rust /
-COPY configuration/* /app/configuration/*
-COPY log4rs.yml /app/configuration/*
+ENV DEV_BOARD_ENV production
 CMD ["./oh_telemetry_collector_server_rust"]

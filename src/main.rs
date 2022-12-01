@@ -5,7 +5,6 @@ use crate::{
     configuration::{
         config_database::{self, init_db},
         config_loader::Settings,
-        config_logging::init_logging,
     },
     route::routes_util::init_routes,
 };
@@ -19,15 +18,7 @@ mod route;
 extern crate lazy_static;
 
 lazy_static! {
-    static ref SETTINGS: Settings = Settings::init_configuration().unwrap_or(
-        Settings::init_other_configuration().unwrap_or(Settings {
-            cors_allowed_headers: vec![],
-            cors_allowed_methods: vec![],
-            cors_allowed_origins: vec![],
-            db_uri: "postgres://postgres:postgres@postgres_service:5432/postgres".to_owned(),
-            server_port: 8013
-        })
-    );
+    static ref SETTINGS: Settings = Settings::init_configuration().unwrap();
     static ref DB_POOL: AsyncOnce<DbConn> = AsyncOnce::new(async {
         let db = config_database::establish_connection().await;
         db.unwrap()
@@ -36,7 +27,10 @@ lazy_static! {
 
 #[tokio::main]
 async fn main() {
-    init_logging();
+    println!("initializing logging...");
+    log4rs::init_file("./log4rs.yml", Default::default()).unwrap();
+
+    println!("initializing db...");
     init_db().await;
 
     println!("================================");
