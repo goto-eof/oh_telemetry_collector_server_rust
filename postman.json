@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "1d8f7869-625b-48c3-942f-c95f375bcfa6",
+		"name": "OH Telemetry Collector Server Rust",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Simple request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/telemetry/Andrei",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"telemetry",
+						"Andrei"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
