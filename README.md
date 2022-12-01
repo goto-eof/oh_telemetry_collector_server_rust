@@ -1,12 +1,12 @@
 # POC - Open Hospital  - Telemetry Collector Server (Rust)
 
-###Run 
+### Run 
 
 ```bash
 docker-compose up
 ```
 
-###make a Get request to
+### make a Get request to
 
 ```
 http://localhost:8013/telemetry/Andrei
