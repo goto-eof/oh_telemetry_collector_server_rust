@@ -7,15 +7,12 @@
 	"item": [
 		{
 			"name": "Simple request",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"last_name\": \"Dodu\"\n}",
+					"raw": "{\n    \"last_name\": \"Hospital\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -23,7 +20,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8013/telemetry/Andrei",
+					"raw": "http://localhost:8013/telemetry/Open",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -31,7 +28,7 @@
 					"port": "8013",
 					"path": [
 						"telemetry",
-						"Andrei"
+						"Open"
 					]
 				}
 			},
