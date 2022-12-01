@@ -1,4 +1,4 @@
-# Open Hospital  - Telemetry Collector Server (rust)
+# POC - Open Hospital  - Telemetry Collector Server (rust)
 
 ###Run 
 
