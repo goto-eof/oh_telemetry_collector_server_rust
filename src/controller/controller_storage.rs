@@ -1,9 +1,10 @@
 use super::controller_common;
+use crate::dao::service_telemetry::store_data_db;
 use serde::{Deserialize, Serialize};
 use warp::{Rejection, Reply};
 
 pub async fn store_data(esempio: Esempio) -> Result<impl Reply, Rejection> {
-    return controller_common::generate_response(Ok(generate_string(esempio.data)));
+    return controller_common::generate_response(Ok(store_data_db(esempio.data).await));
 }
 
 fn generate_string(esempio: Vec<KeyValue>) -> String {
@@ -25,7 +26,7 @@ pub struct Esempio {
 }
 #[derive(Clone, Debug, Default, Deserialize, Serialize)]
 pub struct KeyValue {
-    code: String,
-    key: String,
-    value: Option<String>,
+    pub code: String,
+    pub key: String,
+    pub value: Option<String>,
 }

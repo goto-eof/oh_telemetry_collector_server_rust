@@ -146,3 +146,113 @@ limit
 12-01-2022 03:42:43 - [DB RESULT] DB Connection [OK]
 12-01-2022 03:42:43 - Server::run; addr=0.0.0.0:8013
 12-01-2022 03:42:43 - listening on http://0.0.0.0:8013
+12-01-2022 04:00:30 - Checking DB connection...
+12-01-2022 04:00:30 - Initializing settings....
+12-01-2022 04:00:30 - loading setting file configuration/development...
+12-01-2022 04:00:30 - Settings loaded correctly
+12-01-2022 04:00:30 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:00:30 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 7.040ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:00:30 - Applying all pending migrations
+12-01-2022 04:00:30 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:00:30 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 5.857ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:00:30 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:00:30 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 2.901ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:00:30 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:00:30 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 997.583µs
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:00:30 - SELECT "seaql_migrations"."version", "seaql_migrations"."applied_at" FROM …; rows affected: 1, rows returned: 1, elapsed: 5.881ms
+
+SELECT
+  "seaql_migrations"."version",
+  "seaql_migrations"."applied_at"
+FROM
+  "seaql_migrations"
+ORDER BY
+  "seaql_migrations"."version" ASC
+
+12-01-2022 04:00:30 - No pending migrations
+12-01-2022 04:00:30 - DB Connection OK: postgres://postgres:postgres@127.0.0.1:5432/postgres
+12-01-2022 04:00:30 - SELECT 1 from seaql_migrations …; rows affected: 1, rows returned: 1, elapsed: 2.875ms
+
+SELECT
+  1
+from
+  seaql_migrations
+limit
+  1;
+
+12-01-2022 04:00:30 - [DB RESULT] DB Connection [OK]
+12-01-2022 04:00:30 - Server::run; addr=0.0.0.0:8013
+12-01-2022 04:00:30 - listening on http://0.0.0.0:8013
+12-01-2022 04:00:36 - parsed 8 headers
+12-01-2022 04:00:36 - incoming body is content-length (349 bytes)
+12-01-2022 04:00:36 - incoming body completed
+12-01-2022 04:00:36 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 17.645ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:00:36 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 4.754ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:00:36 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.786ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:00:36 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 2.040ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:00:36 - 127.0.0.1:53984 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 57.159333ms
+12-01-2022 04:00:36 - flushed 138 bytes

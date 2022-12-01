@@ -11,6 +11,8 @@ use crate::{
 };
 mod configuration;
 mod controller;
+mod dao;
+mod entity;
 mod route;
 
 #[macro_use]
