@@ -256,3 +256,1378 @@ VALUES
 
 12-01-2022 04:00:36 - 127.0.0.1:53984 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 57.159333ms
 12-01-2022 04:00:36 - flushed 138 bytes
+12-01-2022 04:02:20 - Checking DB connection...
+12-01-2022 04:02:20 - Initializing settings....
+12-01-2022 04:02:20 - loading setting file configuration/development...
+12-01-2022 04:02:20 - Settings loaded correctly
+12-01-2022 04:02:20 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:02:20 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 4.715ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:02:20 - Applying all pending migrations
+12-01-2022 04:02:21 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:02:21 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 5.740ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:02:21 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:02:21 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 2.580ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:02:21 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:02:21 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 1.783ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:02:21 - SELECT "seaql_migrations"."version", "seaql_migrations"."applied_at" FROM …; rows affected: 1, rows returned: 1, elapsed: 2.908ms
+
+SELECT
+  "seaql_migrations"."version",
+  "seaql_migrations"."applied_at"
+FROM
+  "seaql_migrations"
+ORDER BY
+  "seaql_migrations"."version" ASC
+
+12-01-2022 04:02:21 - No pending migrations
+12-01-2022 04:02:21 - DB Connection OK: postgres://postgres:postgres@127.0.0.1:5432/postgres
+12-01-2022 04:02:21 - SELECT 1 from seaql_migrations …; rows affected: 1, rows returned: 1, elapsed: 2.666ms
+
+SELECT
+  1
+from
+  seaql_migrations
+limit
+  1;
+
+12-01-2022 04:02:21 - [DB RESULT] DB Connection [OK]
+12-01-2022 04:02:21 - Server::run; addr=0.0.0.0:8013
+12-01-2022 04:02:21 - listening on http://0.0.0.0:8013
+12-01-2022 04:11:12 - Checking DB connection...
+12-01-2022 04:11:12 - Initializing settings....
+12-01-2022 04:11:12 - loading setting file configuration/development...
+12-01-2022 04:11:12 - Settings loaded correctly
+12-01-2022 04:11:12 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:11:12 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 3.995ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:11:12 - Applying all pending migrations
+12-01-2022 04:11:12 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:11:12 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 13.515ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:11:13 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:11:13 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 1.018ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:11:13 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:11:13 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 1.405ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:11:13 - SELECT "seaql_migrations"."version", "seaql_migrations"."applied_at" FROM …; rows affected: 1, rows returned: 1, elapsed: 6.047ms
+
+SELECT
+  "seaql_migrations"."version",
+  "seaql_migrations"."applied_at"
+FROM
+  "seaql_migrations"
+ORDER BY
+  "seaql_migrations"."version" ASC
+
+12-01-2022 04:11:13 - No pending migrations
+12-01-2022 04:11:13 - DB Connection OK: postgres://postgres:postgres@127.0.0.1:5432/postgres
+12-01-2022 04:11:13 - SELECT 1 from seaql_migrations …; rows affected: 1, rows returned: 1, elapsed: 2.485ms
+
+SELECT
+  1
+from
+  seaql_migrations
+limit
+  1;
+
+12-01-2022 04:11:13 - [DB RESULT] DB Connection [OK]
+12-01-2022 04:11:13 - Server::run; addr=0.0.0.0:8013
+12-01-2022 04:11:13 - listening on http://0.0.0.0:8013
+12-01-2022 04:11:14 - parsed 8 headers
+12-01-2022 04:11:14 - incoming body is content-length (349 bytes)
+12-01-2022 04:11:14 - incoming body completed
+12-01-2022 04:11:14 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 5.808ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:11:14 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 7.576ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:14 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 6.749ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:14 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 2.597ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:14 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.141ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:14 - 127.0.0.1:54165 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 42.6775ms
+12-01-2022 04:11:14 - flushed 138 bytes
+12-01-2022 04:11:15 - parsed 8 headers
+12-01-2022 04:11:15 - incoming body is content-length (349 bytes)
+12-01-2022 04:11:15 - incoming body completed
+12-01-2022 04:11:15 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 5.990ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:11:15 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 7.948ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:15 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 3.764ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:15 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 3.212ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:15 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 5.854ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:15 - 127.0.0.1:54165 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 88.036458ms
+12-01-2022 04:11:15 - flushed 138 bytes
+12-01-2022 04:11:15 - parsed 8 headers
+12-01-2022 04:11:15 - incoming body is content-length (349 bytes)
+12-01-2022 04:11:15 - incoming body completed
+12-01-2022 04:11:15 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 3.596ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:11:15 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 4.446ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:15 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 3.638ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:15 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 5.231ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:15 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 3.009ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:15 - 127.0.0.1:54165 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 81.322166ms
+12-01-2022 04:11:15 - flushed 138 bytes
+12-01-2022 04:11:16 - parsed 8 headers
+12-01-2022 04:11:16 - incoming body is content-length (349 bytes)
+12-01-2022 04:11:16 - incoming body completed
+12-01-2022 04:11:16 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 4.757ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:11:16 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 5.644ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:16 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 6.182ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:16 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 4.356ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:16 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 5.974ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:16 - 127.0.0.1:54165 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 89.276458ms
+12-01-2022 04:11:16 - flushed 138 bytes
+12-01-2022 04:11:16 - parsed 8 headers
+12-01-2022 04:11:16 - incoming body is content-length (349 bytes)
+12-01-2022 04:11:16 - incoming body completed
+12-01-2022 04:11:16 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 6.184ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:11:16 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 6.870ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:16 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 6.104ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:16 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 2.123ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:16 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 5.139ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:16 - 127.0.0.1:54165 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 83.394333ms
+12-01-2022 04:11:16 - flushed 138 bytes
+12-01-2022 04:11:16 - parsed 8 headers
+12-01-2022 04:11:16 - incoming body is content-length (349 bytes)
+12-01-2022 04:11:16 - incoming body completed
+12-01-2022 04:11:16 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 5.835ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:11:16 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 7.006ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:16 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 4.981ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:16 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 3.469ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:16 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 3.220ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:16 - 127.0.0.1:54165 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 90.153291ms
+12-01-2022 04:11:16 - flushed 138 bytes
+12-01-2022 04:11:17 - parsed 8 headers
+12-01-2022 04:11:17 - incoming body is content-length (349 bytes)
+12-01-2022 04:11:17 - incoming body completed
+12-01-2022 04:11:17 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 3.260ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:11:17 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 2.093ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:17 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 2.224ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:17 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 2.193ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:17 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 2.678ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:17 - 127.0.0.1:54165 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 66.167041ms
+12-01-2022 04:11:17 - flushed 138 bytes
+12-01-2022 04:11:17 - parsed 8 headers
+12-01-2022 04:11:17 - incoming body is content-length (349 bytes)
+12-01-2022 04:11:17 - incoming body completed
+12-01-2022 04:11:17 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 8.375ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:11:17 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 7.147ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:17 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 4.089ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:17 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 3.741ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:17 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 3.603ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:17 - 127.0.0.1:54165 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 84.302416ms
+12-01-2022 04:11:17 - flushed 138 bytes
+12-01-2022 04:11:18 - parsed 8 headers
+12-01-2022 04:11:18 - incoming body is content-length (349 bytes)
+12-01-2022 04:11:18 - incoming body completed
+12-01-2022 04:11:18 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 4.752ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:11:18 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 5.502ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:18 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 7.569ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:18 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 5.603ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:18 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 5.917ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:18 - 127.0.0.1:54165 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 80.602125ms
+12-01-2022 04:11:18 - flushed 138 bytes
+12-01-2022 04:11:18 - parsed 8 headers
+12-01-2022 04:11:18 - incoming body is content-length (349 bytes)
+12-01-2022 04:11:18 - incoming body completed
+12-01-2022 04:11:18 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 1.573ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:11:18 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.761ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:18 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.389ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:18 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.221ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:18 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.236ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:18 - 127.0.0.1:54165 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 36.79075ms
+12-01-2022 04:11:18 - flushed 138 bytes
+12-01-2022 04:11:44 - Checking DB connection...
+12-01-2022 04:11:44 - Initializing settings....
+12-01-2022 04:11:44 - loading setting file configuration/development...
+12-01-2022 04:11:44 - Settings loaded correctly
+12-01-2022 04:11:44 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:11:44 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 12.702ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:11:44 - Applying all pending migrations
+12-01-2022 04:11:44 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:11:44 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 5.699ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:11:44 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:11:44 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 2.235ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:11:44 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:11:44 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 1.058ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:11:44 - SELECT "seaql_migrations"."version", "seaql_migrations"."applied_at" FROM …; rows affected: 1, rows returned: 1, elapsed: 5.666ms
+
+SELECT
+  "seaql_migrations"."version",
+  "seaql_migrations"."applied_at"
+FROM
+  "seaql_migrations"
+ORDER BY
+  "seaql_migrations"."version" ASC
+
+12-01-2022 04:11:44 - No pending migrations
+12-01-2022 04:11:44 - DB Connection OK: postgres://postgres:postgres@127.0.0.1:5432/postgres
+12-01-2022 04:11:44 - SELECT 1 from seaql_migrations …; rows affected: 1, rows returned: 1, elapsed: 3.646ms
+
+SELECT
+  1
+from
+  seaql_migrations
+limit
+  1;
+
+12-01-2022 04:11:44 - [DB RESULT] DB Connection [OK]
+12-01-2022 04:11:44 - Server::run; addr=0.0.0.0:8013
+12-01-2022 04:11:44 - listening on http://0.0.0.0:8013
+12-01-2022 04:11:52 - parsed 8 headers
+12-01-2022 04:11:52 - incoming body is content-length (349 bytes)
+12-01-2022 04:11:52 - incoming body completed
+12-01-2022 04:11:52 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 3.774ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:11:52 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 9.025ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:52 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 10.541ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:52 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.718ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:52 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.001ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:52 - 127.0.0.1:54178 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 62.333ms
+12-01-2022 04:11:52 - flushed 138 bytes
+12-01-2022 04:11:52 - parsed 8 headers
+12-01-2022 04:11:52 - incoming body is content-length (349 bytes)
+12-01-2022 04:11:52 - incoming body completed
+12-01-2022 04:11:52 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 2.872ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:11:52 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.682ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:52 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.642ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:52 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.349ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:52 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 2.519ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:52 - 127.0.0.1:54178 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 56.0475ms
+12-01-2022 04:11:52 - flushed 138 bytes
+12-01-2022 04:11:53 - parsed 8 headers
+12-01-2022 04:11:53 - incoming body is content-length (349 bytes)
+12-01-2022 04:11:53 - incoming body completed
+12-01-2022 04:11:53 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 2.331ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:11:53 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 6.354ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:53 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.791ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:53 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.515ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:53 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 5.497ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:11:53 - 127.0.0.1:54178 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 76.577458ms
+12-01-2022 04:11:53 - flushed 138 bytes
+12-01-2022 04:12:15 - parsed 8 headers
+12-01-2022 04:12:15 - incoming body is content-length (349 bytes)
+12-01-2022 04:12:15 - incoming body completed
+12-01-2022 04:12:15 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 5.558ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:12:15 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 6.725ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:12:15 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 4.921ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:12:15 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.717ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:12:15 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 4.869ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:12:15 - 127.0.0.1:54178 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 79.42975ms
+12-01-2022 04:12:15 - flushed 138 bytes
+12-01-2022 04:12:21 - parsed 8 headers
+12-01-2022 04:12:21 - incoming body is content-length (349 bytes)
+12-01-2022 04:12:21 - incoming body completed
+12-01-2022 04:12:21 - SELECT "telemetry"."id", "telemetry"."request_id", "telemetry"."code", …; rows affected: 0, rows returned: 0, elapsed: 2.822ms
+
+SELECT
+  "telemetry"."id",
+  "telemetry"."request_id",
+  "telemetry"."code",
+  "telemetry"."key",
+  "telemetry"."value",
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:12:21 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 7.480ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:12:21 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.561ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:12:21 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.042ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:12:21 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 2.163ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:12:21 - 127.0.0.1:54178 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 41.227125ms
+12-01-2022 04:12:21 - flushed 138 bytes
+12-01-2022 04:13:25 - Checking DB connection...
+12-01-2022 04:13:25 - Initializing settings....
+12-01-2022 04:13:25 - loading setting file configuration/development...
+12-01-2022 04:13:25 - Settings loaded correctly
+12-01-2022 04:13:25 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:13:25 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 5.063ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:13:25 - Applying all pending migrations
+12-01-2022 04:13:25 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:13:25 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 4.987ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:13:25 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:13:25 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 2.840ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:13:25 - relation "seaql_migrations" already exists, skipping
+12-01-2022 04:13:25 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 1.738ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 04:13:25 - SELECT "seaql_migrations"."version", "seaql_migrations"."applied_at" FROM …; rows affected: 1, rows returned: 1, elapsed: 6.822ms
+
+SELECT
+  "seaql_migrations"."version",
+  "seaql_migrations"."applied_at"
+FROM
+  "seaql_migrations"
+ORDER BY
+  "seaql_migrations"."version" ASC
+
+12-01-2022 04:13:25 - No pending migrations
+12-01-2022 04:13:25 - DB Connection OK: postgres://postgres:postgres@127.0.0.1:5432/postgres
+12-01-2022 04:13:25 - SELECT 1 from seaql_migrations …; rows affected: 1, rows returned: 1, elapsed: 2.715ms
+
+SELECT
+  1
+from
+  seaql_migrations
+limit
+  1;
+
+12-01-2022 04:13:25 - [DB RESULT] DB Connection [OK]
+12-01-2022 04:13:25 - Server::run; addr=0.0.0.0:8013
+12-01-2022 04:13:25 - listening on http://0.0.0.0:8013
+12-01-2022 04:13:33 - parsed 8 headers
+12-01-2022 04:13:33 - incoming body is content-length (349 bytes)
+12-01-2022 04:13:33 - incoming body completed
+12-01-2022 04:13:33 - SELECT MAX("telemetry"."request_id") AS "value" …; rows affected: 0, rows returned: 1, elapsed: 13.547ms
+
+SELECT
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:13:33 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 9.696ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:13:33 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 4.031ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:13:33 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.717ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:13:33 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 5.266ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:13:33 - 127.0.0.1:54191 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 77.052041ms
+12-01-2022 04:13:33 - flushed 138 bytes
+12-01-2022 04:13:34 - parsed 8 headers
+12-01-2022 04:13:34 - incoming body is content-length (349 bytes)
+12-01-2022 04:13:34 - incoming body completed
+12-01-2022 04:13:34 - SELECT MAX("telemetry"."request_id") AS "value" …; rows affected: 0, rows returned: 1, elapsed: 18.073ms
+
+SELECT
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:13:34 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.970ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:13:34 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 2.205ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:13:34 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 1.506ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:13:34 - INSERT INTO "telemetry" ("request_id", …; rows affected: 0, rows returned: 1, elapsed: 2.970ms
+
+INSERT INTO
+  "telemetry" ("request_id", "code", "key", "value")
+VALUES
+  ($1, $2, $3, $4) RETURNING "id",
+  "request_id",
+  "code",
+  "key",
+  "value"
+
+12-01-2022 04:13:34 - 127.0.0.1:54191 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 66.966291ms
+12-01-2022 04:13:34 - flushed 138 bytes
+12-01-2022 04:13:51 - parsed 8 headers
+12-01-2022 04:13:51 - incoming body is content-length (46 bytes)
+12-01-2022 04:13:51 - incoming body completed
+12-01-2022 04:13:51 - SELECT MAX("telemetry"."request_id") AS "value" …; rows affected: 0, rows returned: 1, elapsed: 1.350ms
+
+SELECT
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:13:51 - 127.0.0.1:54191 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 24.720916ms
+12-01-2022 04:13:51 - flushed 138 bytes
+12-01-2022 04:13:53 - parsed 8 headers
+12-01-2022 04:13:53 - incoming body is content-length (46 bytes)
+12-01-2022 04:13:53 - incoming body completed
+12-01-2022 04:13:53 - SELECT MAX("telemetry"."request_id") AS "value" …; rows affected: 0, rows returned: 1, elapsed: 1.603ms
+
+SELECT
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:13:53 - 127.0.0.1:54191 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 26.16575ms
+12-01-2022 04:13:53 - flushed 138 bytes
+12-01-2022 04:13:53 - parsed 8 headers
+12-01-2022 04:13:53 - incoming body is content-length (46 bytes)
+12-01-2022 04:13:53 - incoming body completed
+12-01-2022 04:13:53 - SELECT MAX("telemetry"."request_id") AS "value" …; rows affected: 0, rows returned: 1, elapsed: 3.920ms
+
+SELECT
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:13:53 - 127.0.0.1:54191 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 14.497625ms
+12-01-2022 04:13:53 - flushed 138 bytes
+12-01-2022 04:13:54 - parsed 8 headers
+12-01-2022 04:13:54 - incoming body is content-length (46 bytes)
+12-01-2022 04:13:54 - incoming body completed
+12-01-2022 04:13:54 - SELECT MAX("telemetry"."request_id") AS "value" …; rows affected: 0, rows returned: 1, elapsed: 2.692ms
+
+SELECT
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:13:54 - 127.0.0.1:54191 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 12.658458ms
+12-01-2022 04:13:54 - flushed 138 bytes
+12-01-2022 04:13:54 - parsed 8 headers
+12-01-2022 04:13:54 - incoming body is content-length (46 bytes)
+12-01-2022 04:13:54 - incoming body completed
+12-01-2022 04:13:54 - SELECT MAX("telemetry"."request_id") AS "value" …; rows affected: 0, rows returned: 1, elapsed: 3.578ms
+
+SELECT
+  MAX("telemetry"."request_id") AS "value"
+FROM
+  "telemetry"
+LIMIT
+  $1
+
+12-01-2022 04:13:54 - 127.0.0.1:54191 "POST /telemetry HTTP/1.1" 200 "-" "PostmanRuntime/7.29.2" 16.3665ms
+12-01-2022 04:13:54 - flushed 138 bytes
