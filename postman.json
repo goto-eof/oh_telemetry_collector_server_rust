@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"data\": [\n                {\"code\": \"FUN_HW\", \"key\": \"hw_cpu_number_physical\", \"value\": \"8\"},\n                {\"code\": \"FUN_HW\", \"key\": \"hw_cpu_number_logical\", \"value\": \"16\"},\n                {\"code\": \"FUN_HW\", \"key\": \"hw_ram_capacity\", \"value\": \"32\"},\n                {\"code\": \"FUN_HW\", \"key\": \"hw_screen_size\", \"value\": \"800x600\"}\n            ]\n}",
+					"raw": "{\n    \"data\": [\n                {\"code\": \"FUN_HW\", \"key\": \"hw_cpu_number_physical\", \"value\": \"8\"},\n                {\"code\": \"FUN_HW\", \"key\": \"hw_cpu_number_logical\", \"value\": \"16\"},\n                {\"code\": \"FUN_HW\", \"key\": \"hw_ram_capacity\", \"value\": \"32\"},\n                {\"code\": \"FUN_HW\", \"key\": \"hw_screen_size\", \"value\": null}\n            ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"

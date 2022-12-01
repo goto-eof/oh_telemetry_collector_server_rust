@@ -9,7 +9,12 @@ pub async fn store_data(esempio: Esempio) -> Result<impl Reply, Rejection> {
 fn generate_string(esempio: Vec<KeyValue>) -> String {
     let mut result = "".to_string();
     for tuple in esempio {
-        result = format!("key={}, value={}; {}", tuple.key, tuple.value, result);
+        result = format!(
+            "key={}, value={}; {}",
+            tuple.key,
+            tuple.value.unwrap_or("".to_string()),
+            result
+        );
     }
     return result.to_owned();
 }
@@ -22,5 +27,5 @@ pub struct Esempio {
 pub struct KeyValue {
     code: String,
     key: String,
-    value: String,
+    value: Option<String>,
 }
