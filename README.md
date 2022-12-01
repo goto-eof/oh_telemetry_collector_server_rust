@@ -6,8 +6,10 @@
 docker-compose up
 ```
 
-### make a Get request to
+### use postman collection for making requests
+
+### The server responds on
 
 ```
-http://localhost:8013/telemetry/Andrei
+http://localhost:8013/telemetry
 ```
