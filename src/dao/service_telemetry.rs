@@ -3,8 +3,7 @@ use sea_orm::{
     ActiveModelTrait, ColumnTrait, EntityTrait, FromQueryResult, QuerySelect, Set, TransactionTrait,
 };
 
-use crate::entity::telemetry;
-use crate::{controller::controller_storage::KeyValue, DB_POOL};
+use crate::{controller::request::telemetry_insert_request::KeyValue, entity::telemetry, DB_POOL};
 pub async fn store_data_db(data: Vec<KeyValue>) -> bool {
     let db = DB_POOL.get().await;
 
