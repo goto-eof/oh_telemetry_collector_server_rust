@@ -1,0 +1,148 @@
+12-01-2022 03:34:30 - Checking DB connection...
+12-01-2022 03:34:30 - Initializing settings....
+12-01-2022 03:34:30 - loading setting file configuration/development...
+12-01-2022 03:34:30 - Settings loaded correctly
+12-01-2022 03:36:09 - Checking DB connection...
+12-01-2022 03:36:09 - Initializing settings....
+12-01-2022 03:36:09 - loading setting file configuration/development...
+12-01-2022 03:36:09 - Settings loaded correctly
+12-01-2022 03:39:30 - Checking DB connection...
+12-01-2022 03:39:30 - Initializing settings....
+12-01-2022 03:39:30 - loading setting file configuration/development...
+12-01-2022 03:39:30 - Settings loaded correctly
+12-01-2022 03:39:31 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 12.771ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 03:39:31 - Applying all pending migrations
+12-01-2022 03:39:31 - relation "seaql_migrations" already exists, skipping
+12-01-2022 03:39:31 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 3.076ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 03:39:31 - relation "seaql_migrations" already exists, skipping
+12-01-2022 03:39:31 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 1.395ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 03:39:31 - relation "seaql_migrations" already exists, skipping
+12-01-2022 03:39:31 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 1.074ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 03:39:31 - SELECT "seaql_migrations"."version", "seaql_migrations"."applied_at" FROM …; rows affected: 0, rows returned: 0, elapsed: 2.518ms
+
+SELECT
+  "seaql_migrations"."version",
+  "seaql_migrations"."applied_at"
+FROM
+  "seaql_migrations"
+ORDER BY
+  "seaql_migrations"."version" ASC
+
+12-01-2022 03:39:31 - Applying migration 'm20220101_000001_create_table_telemetry'
+12-01-2022 03:39:31 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 10.127ms
+
+CREATE TABLE IF NOT EXISTS "telemetry" (
+  "id" serial NOT NULL PRIMARY KEY,
+  "request_id" integer NOT NULL,
+  "code" varchar NOT NULL,
+  "key" varchar NOT NULL,
+  "value" varchar
+)
+
+12-01-2022 03:39:31 - Migration 'm20220101_000001_create_table_telemetry' has been applied
+12-01-2022 03:39:31 - INSERT INTO "seaql_migrations" ("version", …; rows affected: 0, rows returned: 1, elapsed: 2.554ms
+
+INSERT INTO
+  "seaql_migrations" ("version", "applied_at")
+VALUES
+  ($1, $2) RETURNING "version",
+  "applied_at"
+
+12-01-2022 03:39:31 - DB Connection OK: postgres://postgres:postgres@127.0.0.1:5432/postgres
+12-01-2022 03:39:31 - SELECT 1 from db_column …; rows affected: 0, rows returned: 0, elapsed: 1.115ms
+
+SELECT
+  1
+from
+  db_column
+limit
+  1;
+
+12-01-2022 03:39:31 - [DB RESULT] Connection to [DB FAILED]: Some(Query(SqlxError(Database(PgDatabaseError { severity: Error, code: "42P01", message: "relation \"db_column\" does not exist", detail: None, hint: None, position: Some(Original(15)), where: None, schema: None, table: None, column: None, data_type: None, constraint: None, file: Some("parse_relation.c"), line: Some(1381), routine: Some("parserOpenTable") }))))
+12-01-2022 03:39:31 - Server::run; addr=0.0.0.0:8013
+12-01-2022 03:39:31 - listening on http://0.0.0.0:8013
+12-01-2022 03:42:42 - Checking DB connection...
+12-01-2022 03:42:42 - Initializing settings....
+12-01-2022 03:42:42 - loading setting file configuration/development...
+12-01-2022 03:42:42 - Settings loaded correctly
+12-01-2022 03:42:42 - relation "seaql_migrations" already exists, skipping
+12-01-2022 03:42:42 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 3.514ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 03:42:42 - Applying all pending migrations
+12-01-2022 03:42:43 - relation "seaql_migrations" already exists, skipping
+12-01-2022 03:42:43 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 4.695ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 03:42:43 - relation "seaql_migrations" already exists, skipping
+12-01-2022 03:42:43 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 1.181ms
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 03:42:43 - relation "seaql_migrations" already exists, skipping
+12-01-2022 03:42:43 - CREATE TABLE IF NOT …; rows affected: 0, rows returned: 0, elapsed: 972.291µs
+
+CREATE TABLE IF NOT EXISTS "seaql_migrations" (
+  "version" varchar NOT NULL PRIMARY KEY,
+  "applied_at" bigint NOT NULL
+)
+
+12-01-2022 03:42:43 - SELECT "seaql_migrations"."version", "seaql_migrations"."applied_at" FROM …; rows affected: 1, rows returned: 1, elapsed: 7.079ms
+
+SELECT
+  "seaql_migrations"."version",
+  "seaql_migrations"."applied_at"
+FROM
+  "seaql_migrations"
+ORDER BY
+  "seaql_migrations"."version" ASC
+
+12-01-2022 03:42:43 - No pending migrations
+12-01-2022 03:42:43 - DB Connection OK: postgres://postgres:postgres@127.0.0.1:5432/postgres
+12-01-2022 03:42:43 - SELECT 1 from seaql_migrations …; rows affected: 1, rows returned: 1, elapsed: 2.782ms
+
+SELECT
+  1
+from
+  seaql_migrations
+limit
+  1;
+
+12-01-2022 03:42:43 - [DB RESULT] DB Connection [OK]
+12-01-2022 03:42:43 - Server::run; addr=0.0.0.0:8013
+12-01-2022 03:42:43 - listening on http://0.0.0.0:8013
