@@ -7,16 +7,28 @@
 	"item": [
 		{
 			"name": "Simple request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"last_name\": \"Dodu\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:3030/telemetry/Andrei",
+					"raw": "http://localhost:8013/telemetry/Andrei",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3030",
+					"port": "8013",
 					"path": [
 						"telemetry",
 						"Andrei"
