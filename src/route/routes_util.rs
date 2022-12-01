@@ -2,7 +2,7 @@ use warp::{Filter, Rejection, Reply};
 
 use crate::controller::controller_common::generate_response;
 
-use super::telemetry_routes::get_telemetry_routes;
+use super::routes_telemetry::get_telemetry_routes;
 
 pub async fn init_routes() -> impl Filter<Extract = impl Reply, Error = Rejection> + Clone {
     let cors_allowed_origins: Vec<&str> = vec![];
