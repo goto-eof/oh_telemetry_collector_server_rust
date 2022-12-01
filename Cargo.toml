@@ -4,11 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-tokio = { version = "1.21.2", features = ["macros", "rt-multi-thread", "parking_lot", "sync", "time"]  }
+tokio = { version = "1.22.0", features = ["macros", "rt-multi-thread", "parking_lot", "sync", "time"]  }
 warp = "0.3.3"
-serde_json = "1.0.87"
-serde = {version = "1.0.147", features = ["derive"] }
-serde_derive = "1.0.147"
+serde_json = "1.0.89"
+serde = {version = "1.0.148", features = ["derive"] }
+serde_derive = "1.0.148"
 chrono = { version = "0.4", features = ["serde"] }
 log4rs="1.2.0"
 log = "0.4.17"  
@@ -18,9 +18,9 @@ config = "0.13.2"
 jsonwebtoken = "8.1.1"
 url="2.3.1"
 bcrypt = "0.13.0"
-syn = "1.0.103"
+syn = "1.0.104"
 
 [dependencies.sea-orm]
-version = "0.10.3"
+version = "0.10.4"
 features = [ "sqlx-sqlite", "runtime-tokio-rustls", "macros" ]
 default-features = false
