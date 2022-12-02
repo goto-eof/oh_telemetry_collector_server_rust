@@ -6,7 +6,9 @@
 docker-compose up
 ```
 
-### use postman collection for making requests
+### Use postman collection for making requests
+
+Import postman.json
 
 ### The server responds on
 
