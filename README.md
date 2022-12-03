@@ -14,7 +14,7 @@ Import postman.json
 ### The server responds on
 
 ```
-http://localhost:8013/telemetry
+http://localhost:8013/telemetry:8013
 ```
 
 
