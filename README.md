@@ -1,17 +1,13 @@
-  sSSs_sSSs     .S    S.         sdSS_SSSSSSbs    sSSs    sSSs  
- d%%SP~YS%%b   .SS    SS.        YSSS~S%SSSSSP   d%%SP   d%%SP  
-d%S'     `S%b  S%S    S%S             S%S       d%S'    d%S'    
-S%S       S%S  S%S    S%S             S%S       S%S     S%|     
-S&S       S&S  S%S SSSS%S             S&S       S&S     S&S     
-S&S       S&S  S&S  SSS&S             S&S       S&S     Y&Ss    
-S&S       S&S  S&S    S&S             S&S       S&S     `S&&S   
-S&S       S&S  S&S    S&S             S&S       S&S       `S*S  
-S*b       d*S  S*S    S*S             S*S       S*b        l*S  
-S*S.     .S*S  S*S    S*S             S*S       S*S.      .S*P  
- SSSbs_sdSSS   S*S    S*S             S*S        SSSbs  sSS*S   
-  YSSP~YSSY    SSS    S*S             S*S         YSSP  YSS'    
-                      SP              SP                        
-                      Y               Y                         
+ ________  ___  ___          _________  ________  ________      
+|\   __  \|\  \|\  \        |\___   ___\\   ____\|\   ____\     
+\ \  \|\  \ \  \\\  \       \|___ \  \_\ \  \___|\ \  \___|_    
+ \ \  \\\  \ \   __  \           \ \  \ \ \  \    \ \_____  \   
+  \ \  \\\  \ \  \ \  \           \ \  \ \ \  \____\|____|\  \  
+   \ \_______\ \__\ \__\           \ \__\ \ \_______\____\_\  \ 
+    \|_______|\|__|\|__|            \|__|  \|_______|\_________\
+                                                    \|_________|
+                                                                
+                                                                
                                                                 
 
 # POC | Open Hospital - Telemetry Collector Server (Rust)
