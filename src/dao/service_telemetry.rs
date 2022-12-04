@@ -1,3 +1,4 @@
+use chrono::Utc;
 use migration::DbErr;
 use sea_orm::{
     ActiveModelTrait, ColumnTrait, EntityTrait, FromQueryResult, QuerySelect, Set, TransactionTrait,
@@ -19,12 +20,14 @@ pub async fn store_data_db(data: Vec<KeyValue>) -> bool {
 
             let max = max_opt.unwrap().value + 1;
 
+            let date_time = Utc::now().naive_utc();
             for item in data {
                 let active_model = telemetry::ActiveModel {
                     code: Set(item.code),
                     key: Set(item.key),
                     value: Set(item.value),
                     request_id: Set(max),
+                    created_at: Set(date_time),
                     ..Default::default()
                 };
 

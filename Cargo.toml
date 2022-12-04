@@ -26,5 +26,5 @@ members = [".", "src/migration"]
 
 [dependencies.sea-orm]
 version = "0.10.4"
-features = [ "sqlx-sqlite", "runtime-tokio-rustls", "macros" ]
+features = [ "sqlx-sqlite", "runtime-tokio-rustls", "macros", "with-chrono" ]
 default-features = false

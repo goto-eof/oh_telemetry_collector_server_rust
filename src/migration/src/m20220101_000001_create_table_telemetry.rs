@@ -22,6 +22,7 @@ impl MigrationTrait for Migration {
                     .col(ColumnDef::new(Telemetry::Code).string().not_null())
                     .col(ColumnDef::new(Telemetry::Key).string().not_null())
                     .col(ColumnDef::new(Telemetry::Value).string())
+                    .col(ColumnDef::new(Telemetry::CreatedAt).timestamp().not_null())
                     .to_owned(),
             )
             .await
@@ -42,4 +43,5 @@ enum Telemetry {
     Code,
     Key,
     Value,
+    CreatedAt,
 }
