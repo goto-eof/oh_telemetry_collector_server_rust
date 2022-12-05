@@ -20,12 +20,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8013/telemetry",
+					"raw": "http://localhost:8017/telemetry",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8013",
+					"port": "8017",
 					"path": [
 						"telemetry"
 					]

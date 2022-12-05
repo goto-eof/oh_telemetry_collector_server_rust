@@ -33,14 +33,14 @@ Import postman.json
 ### The server responds on
 
 ```
-http://localhost:8013/telemetry:8013
+http://localhost:8017/telemetry
 ```
 
 
 ### DB connection
 
 ```
-postgres://127.0.0.1:5432/postgres
+postgres://127.0.0.1:5437/postgres
 username: postgres
 password: postgres
 ```

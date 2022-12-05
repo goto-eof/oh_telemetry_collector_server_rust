@@ -5,7 +5,7 @@ services:
     container_name: postgres_service_bis
     image: postgres:14-alpine
     ports:
-      - '5432:5432'
+      - '5437:5437'
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres
@@ -13,4 +13,4 @@ services:
     restart: on-failure
     networks:
       - default
-    command: -p 5432
+    command: -p 5437

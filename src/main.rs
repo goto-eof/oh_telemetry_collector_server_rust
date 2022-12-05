@@ -34,7 +34,7 @@ async fn main() {
     init_db().await;
 
     println!("================================");
-    println!("server started on port [8013] :)");
+    println!("server started on port [{}] :)", SETTINGS.server_port);
     println!("================================");
 
     warp::serve(init_routes().await)
