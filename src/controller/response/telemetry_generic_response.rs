@@ -2,6 +2,6 @@ use serde::Serialize;
 
 #[derive(Serialize, Debug)]
 pub struct TelemetryGenericResponse<T> {
-    pub success: bool,
+    pub status: bool,
     pub result: T,
 }

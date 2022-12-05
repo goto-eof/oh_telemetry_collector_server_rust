@@ -9,7 +9,7 @@ pub fn generate_response<T: Serialize>(
 ) -> Result<impl Reply, Rejection> {
     let response = match data_wrapped {
         Ok(result) => json::<_>(&TelemetryGenericResponse {
-            success: true,
+            status: true,
             result: &result,
         }),
         Err(err) => return Err(err),
