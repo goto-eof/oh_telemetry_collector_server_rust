@@ -12,6 +12,9 @@
 ```                                                              
 
 # POC | Open Hospital - Telemetry Collector Server (Rust)
+
+POC developed for Informatici Senza Frontiere APS implemented in Rust. Telemetry Collector will collect data from Open Hospital instances installed all over the world.
+
 See also [oh_telemetry_collector_server_java](https://github.com/goto-eof/oh_telemetry_collector_server_java) and [oh_telemetry_collector_test_load](https://github.com/goto-eof/oh_telemetry_collector_load_test).
 
 [Here](https://openhospital.atlassian.net/browse/OP-952) is the Jira ticket.
