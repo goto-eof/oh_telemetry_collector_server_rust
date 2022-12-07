@@ -1,8 +1,10 @@
 use chrono::Utc;
-use migration::DbErr;
+use migration::{Condition, DbErr, Expr, Query};
 use sea_orm::{
-    ActiveModelTrait, ColumnTrait, EntityTrait, FromQueryResult, QuerySelect, Set, TransactionTrait,
+    ActiveModelTrait, ColumnTrait, EntityTrait, FromQueryResult, QueryFilter, QueryOrder,
+    QuerySelect, Set, TransactionTrait,
 };
+use serde::Serialize;
 use std::collections::HashMap;
 
 use crate::{entity::telemetry, DB_POOL};
@@ -53,39 +55,42 @@ struct SingleNumeric {
     value: i32,
 }
 
-// #[derive(FromQueryResult, Debug)]
-// struct MultipleKeyValue {
-//     n_pcs: i32,
-//     value: String,
-// }
+#[derive(FromQueryResult, Debug, Serialize)]
+pub struct MultipleKeyValue {
+    pub n_pcs: i64,
+    pub value: String,
+}
 
-// pub async fn computers_needs_ram_upgrade() -> () {
-//     let db = DB_POOL.get().await;
-//     let gb1 = Expr::col(telemetry::Column::Property);
-//     let gb1: IntoIterator = gb1.into();
-//     let result = telemetry::Entity::find()
-//         .select_only()
-//         .column(telemetry::Column::Value)
-//         .column_as(telemetry::Column::Value.count(), "n_pcs")
-//         .filter(
-//             Condition::any().add(
-//                 telemetry::Column::RequestId.in_subquery(
-//                     Query::select()
-//                         .expr(telemetry::Column::RequestId.max())
-//                         .from(telemetry::Entity)
-//                         .and_where(telemetry::Column::Property.eq("hw_cpu_idientifier"))
-//                         .add_group_by(gb1)
-//                         .add_group_by(Expr::col(telemetry::Column::Value).into())
-//                         .to_owned(),
-//                 ),
-//             ),
-//         )
-//         .group_by(telemetry::Column::Code)
-//         .group_by(telemetry::Column::Property)
-//         .group_by(telemetry::Column::Value)
-//         .into_model::<MultipleKeyValue>()
-//         .all(db)
-//         .await;
+pub async fn telemetry_retrieve_num_comp_ram() -> Result<Vec<MultipleKeyValue>, DbErr> {
+    let db = DB_POOL.get().await;
+    let result = telemetry::Entity::find()
+        .select_only()
+        .column(telemetry::Column::Value)
+        .column_as(telemetry::Column::Value.count(), "n_pcs")
+        .filter(telemetry::Column::Property.eq("hw_mem_total_memory"))
+        .filter(
+            Condition::any().add(
+                telemetry::Column::RequestId.in_subquery(
+                    Query::select()
+                        .expr(telemetry::Column::RequestId.max())
+                        .from(telemetry::Entity)
+                        .and_where(telemetry::Column::Property.eq("hw_cpu_idientifier"))
+                        .group_by_columns(vec![
+                            telemetry::Column::Property,
+                            telemetry::Column::Value,
+                        ])
+                        .to_owned(),
+                ),
+            ),
+        )
+        .group_by(telemetry::Column::Code)
+        .group_by(telemetry::Column::Property)
+        .group_by(telemetry::Column::Value)
+        .order_by(telemetry::Column::Property, migration::Order::Asc)
+        .into_model::<MultipleKeyValue>()
+        .all(db)
+        .await;
 
-//     println!("{:?}", result);
-// }
+    println!("{:?}", result);
+    return result;
+}
