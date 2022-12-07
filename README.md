@@ -22,7 +22,8 @@ See also [oh_telemetry_collector_server_java](https://github.com/goto-eof/oh_tel
 <p align="center" width="100%">
     <img width="50%" src="dev-stack.png"> 
 </p>
- 
+ Technology stack: Rust, Warp, sea-orm, Postgres
+
 ### Run 
 
 ```bash

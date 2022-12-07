@@ -7,7 +7,7 @@ pub struct Model {
     pub id: i32,
     pub request_id: i32,
     pub code: String,
-    pub key: String,
+    pub property: String,
     pub value: Option<String>,
     pub created_at: DateTime,
 }

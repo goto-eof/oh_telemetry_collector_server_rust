@@ -20,7 +20,7 @@ impl MigrationTrait for Migration {
                     )
                     .col(ColumnDef::new(Telemetry::RequestId).integer().not_null())
                     .col(ColumnDef::new(Telemetry::Code).string().not_null())
-                    .col(ColumnDef::new(Telemetry::Key).string().not_null())
+                    .col(ColumnDef::new(Telemetry::Property).string().not_null())
                     .col(ColumnDef::new(Telemetry::Value).string())
                     .col(ColumnDef::new(Telemetry::CreatedAt).timestamp().not_null())
                     .to_owned(),
@@ -41,7 +41,7 @@ enum Telemetry {
     Id,
     RequestId,
     Code,
-    Key,
+    Property,
     Value,
     CreatedAt,
 }
