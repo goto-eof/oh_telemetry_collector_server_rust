@@ -9,6 +9,7 @@ It is one of the three applications on which will be carried out performance tes
  Technology stack: Rust, Warp, sea-orm, Postgres
 
 See also:
+
 - [oh_telemetry_collector_load_test](https://github.com/goto-eof/oh_telemetry_collector_load_test)
 - [oh_telemetry_collector_server_java](https://github.com/goto-eof/oh_telemetry_collector_server_java)
 - [oh_telemetry_collector_server_rust](https://github.com/goto-eof/oh_telemetry_collector_server_rust)
