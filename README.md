@@ -1,33 +1,29 @@
-```
- ________  ___  ___          _________  ________  ________      
-|\   __  \|\  \|\  \        |\___   ___\\   ____\|\   ____\     
-\ \  \|\  \ \  \\\  \       \|___ \  \_\ \  \___|\ \  \___|_    
- \ \  \\\  \ \   __  \           \ \  \ \ \  \    \ \_____  \   
-  \ \  \\\  \ \  \ \  \           \ \  \ \ \  \____\|____|\  \  
-   \ \_______\ \__\ \__\           \ \__\ \ \_______\____\_\  \ 
-    \|_______|\|__|\|__|            \|__|  \|_______|\_________\
-                                                    \|_________|
-                                                                
-                                                                
-```                                                              
+#### Telemetry Collector Server (Rust)
 
-# POC | Open Hospital - Telemetry Collector Server (Rust)
-
-POC developed for Informatici Senza Frontiere APS implemented in Rust. Telemetry Collector will collect data from Open Hospital instances installed all over the world.
-
-See also [oh_telemetry_collector_server_java](https://github.com/goto-eof/oh_telemetry_collector_server_java) and [oh_telemetry_collector_test_load](https://github.com/goto-eof/oh_telemetry_collector_load_test).
-
-[Here](https://openhospital.atlassian.net/browse/OP-952) is the Jira ticket.
+It is one of the three applications on which will be carried out performance tests in order to determine which are the most performing technologies. This is the Rust version. 
 
 <p align="center" width="100%">
     <img width="50%" src="dev-stack.png"> 
 </p>
+
  Technology stack: Rust, Warp, sea-orm, Postgres
+
+See also:
+- [oh_telemetry_collector_load_test](https://github.com/goto-eof/oh_telemetry_collector_load_test)
+- [oh_telemetry_collector_server_java](https://github.com/goto-eof/oh_telemetry_collector_server_java)
+- [oh_telemetry_collector_server_rust](https://github.com/goto-eof/oh_telemetry_collector_server_rust)
+- [oh_telemetry_collector_server_ts](https://github.com/goto-eof/oh_telemetry_collector_server_ts)
 
 ### Run 
 
 ```bash
 docker-compose up
+```
+
+### Run only DBMS
+
+```bash
+docker-compose -f docker-compose-dbms.yml up
 ```
 
 ### Use postman collection for making requests
@@ -37,7 +33,7 @@ Import postman.json
 ### The server responds on
 
 ```
-http://localhost:8017/telemetry
+http://localhost:8017/collect
 ```
 
 
