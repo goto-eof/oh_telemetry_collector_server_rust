@@ -10,7 +10,11 @@ pub fn get_telemetry_routes() -> impl Filter<Extract = impl Reply, Error = Rejec
         .or(warp::path("num-comp-ram")
             .and(warp::get())
             .and(warp::path::end())
-            .and_then(controller_telemetry::retrieve_num_comp_ram));
+            .and_then(controller_telemetry::retrieve_num_comp_ram))
+        .or(warp::path("delete-all")
+            .and(warp::delete())
+            .and(warp::path::end())
+            .and_then(controller_telemetry::delete_all));
 
     return routes;
 }

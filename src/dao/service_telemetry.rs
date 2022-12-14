@@ -1,5 +1,5 @@
 use chrono::Utc;
-use migration::{Condition, DbErr, Expr, Query};
+use migration::{Condition, DbErr, Query};
 use sea_orm::{
     ActiveModelTrait, ColumnTrait, EntityTrait, FromQueryResult, QueryFilter, QueryOrder,
     QuerySelect, Set, TransactionTrait,
@@ -48,6 +48,12 @@ pub async fn store_data_db(data: HashMap<String, HashMap<String, Option<String>>
     })
     .await
     .unwrap_or(false)
+}
+
+pub async fn delete_all_dao() -> bool {
+    let db = DB_POOL.get().await;
+    let result = telemetry::Entity::delete_many().exec(db).await;
+    return result.is_ok();
 }
 
 #[derive(FromQueryResult)]
