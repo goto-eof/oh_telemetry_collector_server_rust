@@ -27,8 +27,8 @@ lazy_static! {
 
 #[tokio::main]
 async fn main() {
-    println!("initializing logging...");
-    log4rs::init_file("./log4rs.yml", Default::default()).unwrap();
+    // println!("initializing logging...");
+    // log4rs::init_file("./log4rs.yml", Default::default()).unwrap();
 
     println!("initializing db...");
     init_db().await;
